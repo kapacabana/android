@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context="com.nelumbo_gcs.gcs_timer.MainActivity">
+
+    <TextView
+        android:id="@+id/GCS_Trainer"
+        android:layout_width="143dp"
+        android:layout_height="76dp"
+        android:text="GCS-Trainer"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <Button
+        android:id="@+id/start_training"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="81dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="291dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:text="@string/start_training"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GCS_Trainer"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="75dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="481dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/ic_menu_help"
+        android:backgroundTint="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/statistic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/statistic"
+        android:layout_width="68dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="466dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/ic_menu_sort_by_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/help"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
